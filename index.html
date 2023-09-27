@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="Styling/Flour and Grains.png" type="image/x-icon">
+
+    <style>
+        
+    </style>
+    <title>Vigrid's Oven</title>
+</head>
+
+
+<body>
+
+    <header>
+
+      <div class="back-color">
+
+      <div class="title-images">
+
+      <img class="bread" src="Styling/Bread Clip art.png" width="250" height="90">
+
+      <h1 class="title">Vigrid's Oven</h1>
+
+      <img class="bread" src="Styling/Bread Clip art.png" width="250" height="90">
+
+     </div>
+
+   
+
+
+        
+
+       
+
+        <!----------------------------------------------------------------------------------------------------------------->
+
+       
+
+         <div class="buttons">
+
+            <button class="section-button" onclick="
+            displaySection('products');
+            ">Products</button>
+
+            <button class="section-button" onclick="
+            displaySection('feedbacks');
+            ">Feedbacks</button> 
+
+            <button class="section-button" onclick="
+            displaySection('about-us');
+            ">About Us</button>
+
+         </div>
+
+        </div>
+        
+      </header>
+
+         <main>
+
+        <div class="slideShow">
+
+          <h1 class="intro">Welcome!</h1>
+          <h2 class="intro">Click on one of the buttons to proceed</h2>
+
+         <div class="container">
+
+          <img class="wheat" src="Styling/Wheat Clip Art.png" width="150" heigh="202">
+         <img class="slide" name="slide" width="750" height="360">
+         <img class="wheat" src="Styling/Wheat Clip Art Reverse.png" width="150" heigh="202">
+
+         </div>
+        </div>
+         <!----------------------------------------------PRODUCTS--------------------------------------------------->
+
+         <div class="section" id="products">
+
+           <div class="products-buttons">
+
+            <button class="innerSection" onclick="
+            displayInnerSection('bread');
+             ">Bread</button>
+
+           <button class="innerSection" onclick="
+           displayInnerSection('pastries');
+           ">Pastries</button>
+
+            <button class="innerSection" onclick="
+            displayInnerSection('orders');
+            ">Orders</button>
+           </div>
+
+         <!--------------------------------------------------------------------------------------------------------------->
+
+           <div class="section2" id="bread">
+
+            <div class="store-items">
+
+                <div class="an-item">
+                    <img src="Items/Baguette.jpg" alt="Baguette" width="100px" height="100px">
+
+                    <div class="item-text">
+                     <h4>Baguette</h4>
+                     <p>Price: 1$</p>
+                    </div>
+
+                    <div class="chart-buttons">
+                    <button onclick="
+                      addOrder('Baguette',1,'add');
+                      ">Add</button>
+
+                    <button onclick="
+                    addOrder('Baguette',1,'remove');
+                    ">Remove</button>
+                  </div>
+                </div>
+
+                
+
+                <div class="an-item">
+                  <img src="Items/Bagels.jpeg" alt="Bagel" width="100px" height="100px">
+
+                  <div class="item-text">
+                   <h4>Bagel</h4>
+                   <p>Price: 0.2$</p>
+                  </div>
+
+                  <div class="chart-buttons">
+                  <button onclick="
+                    addOrder('Bagel',0.2,'add');
+                    ">Add</button>
+                  <button onclick="
+                  addOrder('Bagel',0.2,'remove');
+                  ">Remove</button>
+                </div>
+              </div>
+
+              
+              <div class="an-item">
+                <img src="Items/Bread Sticks.jpg" alt="Bread Sticks" width="100px" height="100px">
+
+                <div class="item-text">
+                 <h4>Bread Sticks</h4>
+                 <p>Price: 0.1$</p>
+                </div>
+
+                <div class="chart-buttons">
+                <button class="add-button" onclick="
+                  addOrder('Bread Sticks', 0.1,'add');
+                  ">Add</button>
+                <button onclick="
+                addOrder('Bread Sticks', 0.1,'remove');
+                ">Remove</button>
+              </div>
+            </div>
+
+            
+            <div class="an-item">
+              <img src="Items/Arabic Pita Bread.webp" alt="Arabic Pita Bread" width="100px" height="100px">
+
+              <div class="item-text">
+               <h4>Arabic Pita Bread</h4>
+               <p>Price: 0.2$</p>
+              </div>
+
+              <div class="chart-buttons">
+              <button class="add-button" onclick="
+                addOrder('Arabic Pita Bread', 0.2,'add');
+                ">Add</button>
+              <button  onclick="
+              addOrder('Arabic Pita Bread', 0.2,'remove');
+              ">Remove</button>
+            </div>
+          </div>
+
+          <div class="an-item">
+            <img src="Items/Burger Buns.jpeg" alt="Burger Buns" width="100px" height="100px">
+
+            <div class="item-text">
+             <h4>Burger Buns</h4>
+             <p>Price: 0.3$</p>
+            </div>
+
+            <div class="chart-buttons">
+            <button class="add-button" onclick="
+              addOrder('Burger Buns',0.3,'add');
+              ">Add</button>
+            <button  onclick="
+            addOrder('Burger Buns',0.3,'remove');
+            ">Remove</button>
+          </div>
+        </div>
+
+        <div class="an-item">
+          <img src="Items/Pita Bread.jpeg" alt="Pita Bread" width="100px" height="100px">
+
+          <div class="item-text">
+           <h4>Pita Bread</h4>
+           <p>Price: 0.3$</p>
+          </div>
+
+          <div class="chart-buttons">
+          <button class="add-button" onclick="
+            addOrder('Pita Bread', 0.3,'add');
+            ">Add</button>
+          <button  onclick="
+          addOrder('Pita Bread', 0.3,'remove');
+          ">Remove</button>
+        </div>
+      </div>
+
+      <div class="an-item">
+        <img src="Items/Pretzels.jpeg" alt="Pretzels" width="100px" height="100px">
+
+        <div class="item-text">
+         <h4>Pretzels</h4>
+         <p>Price: 0.1$</p>
+        </div>
+
+        <div class="chart-buttons">
+        <button class="add-button" onclick="
+          addOrder('Pretzels', 0.1,'add');
+          ">Add</button>
+        <button onclick="
+        addOrder('Pretzels', 0.1,'remove');
+        ">Remove</button>
+      </div>
+     </div>
+
+      <div class="an-item">
+        <img src="Items/Sandwich Buns.jpg" alt="Sandwich Buns" width="100px" height="100px">
+
+        <div class="item-text">
+        <h4>Sandwich Buns</h4>
+        <p>Price: 0.5$</p>
+        </div>
+
+        <div class="chart-buttons">
+        <button class="add-button" onclick="
+          addOrder('Sandwich Buns', 0.5,'add');
+          ">Add</button>
+        <button onclick="
+        addOrder('Sandwich Buns', 0.5,'remove');
+        ">Remove</button>
+      </div>
+     </div>
+
+     <div class="an-item">
+      <img src="Items/Sour Dough.jpeg" alt="Sour Dough" width="100px" height="100px">
+
+      <div class="item-text">
+      <h4>Sour Dough</h4>
+      <p>Price: 0.2$</p>
+      </div>
+
+      <div class="chart-buttons">
+      <button class="add-button" onclick="
+        addOrder('Sour Dough',0.2,'add');
+        ">Add</button>
+      <button onclick="
+      addOrder('Sour Dough',0.2,'remove');
+      ">Remove</button>
+    </div>
+   </div>
+
+   <div class="an-item">
+    <img src="Items/White Bread.jpeg" alt="White Bread" width="100px" height="100px">
+
+    <div class="item-text">
+    <h4>White Bread</h4>
+    <p>Price: 0.1$</p>
+    </div>
+
+    <div class="chart-buttons">
+    <button class="add-button" onclick="
+      addOrder('White Bread', 0.1,'add');
+      ">Add</button>
+    <button onclick="
+    addOrder('White Bread', 0.1,'remove');
+    ">Remove</button>
+  </div>
+ </div>
+
+ <div class="an-item">
+  <img src="Items/Whole Grain.jpeg" alt="Whole Grain" width="100px" height="100px">
+
+  <div class="item-text">
+  <h4>Whole Grain</h4>
+  <p>Price: 0.2$</p>
+  </div>
+
+  <div class="chart-buttons">
+  <button class="add-button"  onclick="
+  addOrder('Whole Grain',0.2,'add');
+  ">Add</button>
+  <button  onclick="
+  addOrder('Whole Grain',0.2,'remove');
+  ">Remove</button>
+</div>
+</div>
+
+   </div>
+  </div>
+
+        <!--------------------------------------------------------------------------------------------->
+
+        <div class="section2" id="pastries">
+
+          <div class="store-items">
+          
+          <div class="an-item">
+            <img src="Items/Cinnamon Rolls.jpeg" alt="Cinnamon Rolls" width="100px" height="100px">
+      
+            <div class="item-text">
+            <h4>Cinnamon Rolls</h4>
+            <p>Price: 0.6$</p>
+            </div>
+      
+            <div class="chart-buttons">
+            <button class="add-button" onclick="
+            addOrder('Cinnamon Rolls', 0.6,'add');
+            ">Add</button>
+            <button onclick="
+            addOrder('Cinnamon Rolls', 0.6,'remove');
+            ">Remove</button>
+          </div>
+         </div>
+
+              <div class="an-item">
+                <img src="Items/Croissants.jpg" alt="Croissants" width="100px" height="100px">
+          
+                <div class="item-text">
+                <h4>Croissants</h4>
+                <p>Price: 0.8$</p>
+                </div>
+          
+                <div class="chart-buttons">
+                <button class="add-button"  onclick="
+                addOrder('Croissants',0.8,'add');
+                ">Add</button>
+                <button onclick="
+                addOrder('Croissants',0.8),'remove';
+                ">Remove</button>
+              </div>
+            </div>
+
+              <div class="an-item">
+                <img src="Items/Donuts.jpeg" alt="Donuts" width="100px" height="100px">
+          
+                <div class="item-text">
+                <h4>Donuts</h4>
+                <p>Price: 0.3$</p>
+                </div>
+          
+                <div class="chart-buttons">
+                <button class="add-button"  onclick="
+                addOrder('Donuts',0.3,'add');
+                ">Add</button>
+                <button  onclick="
+                addOrder('Donuts',0.3,'remove');
+                ">Remove</button>
+              </div>
+            </div>
+
+            <div class="an-item">
+              <img src="Items/English Muffins.jpeg" alt="English Muffin" width="100px" height="100px">
+
+              <div class="item-text">
+              <h4>English Muffin</h4>
+              <p>Price: 1$</p>
+              </div>
+
+              <div class="chart-buttons">
+              <button class="add-button"  onclick="
+              addOrder('English Muffin', 1,'add');
+              ">Add</button>
+              <button onclick="
+              addOrder('English Muffin', 1,'remove');
+              ">Remove</button>
+            </div>
+          </div>
+
+            <div class="an-item">
+              <img src="Items/Milk Bread.jpg" alt="Milk Bread" width="100px" height="100px">
+
+              <div class="item-text">
+              <h4>Milk Bread</h4>
+              <p>Price: 0.2$</p>
+              </div>
+
+              <div class="chart-buttons">
+              <button class="add-button"  onclick="
+              addOrder('Milk Bread', 0.2,'add');
+              ">Add</button>
+              <button onclick="
+              addOrder('Milk Bread', 0.2,'remove');
+              ">Remove</button>
+            </div>
+          </div>
+
+          <div class="an-item">
+            <img src="Items/Pound Cakes.jpeg" alt="Pound Cakes" width="100px" height="100px">
+
+            <div class="item-text">
+            <h4>Pound Cakes</h4>
+            <p>Price: 0.4$</p>
+            </div>
+
+            <div class="chart-buttons">
+            <button class="add-button"  onclick="
+            addOrder('Pound Cake', 0.4,'add');
+            ">Add</button>
+            <button  onclick="
+            addOrder('Pound Cake', 0.4,'remove');
+            ">Remove</button>
+          </div>
+          </div>
+
+          <div class="an-item">
+            <img src="Items/Tarts.jpeg" alt="Tarts" width="100px" height="100px">
+
+            <div class="item-text">
+            <h4>Tarts</h4>
+            <p>Price: 2$</p>
+            </div>
+
+            <div class="chart-buttons">
+            <button class="add-button"  onclick="
+            addOrder('Tarts', 2,'add');
+            ">Add</button>
+            <button onclick="
+            addOrder('Tarts', 2,'remove');
+            ">Remove</button>
+          </div>
+          </div>
+
+          </div>
+
+         </div>
+
+           <!---------------------------------------------------------------------------------->
+         
+           
+
+           <div class="section2" id="orders">
+
+            <div class="all-orders">
+
+          
+            
+
+          
+
+            </div>
+
+            <div class="total">
+              
+            </div>
+
+           </div>
+
+         <!--------------------------------------------------------------------------------------------------------------->
+
+         </div>
+
+
+         <!--------------------------------------------------END OF PRODUCTS---------------------------------------------------->
+
+         <!---------------------------------------------------FEEDBACKS--------------------------------------------->
+
+         <div class="section" id="feedbacks">
+
+            <div class="feedback-container">
+
+             <div class="add-feedback">
+             <input type="text" class="txt-feedback" placeholder="Leave your feedback"> 
+             <button class="btn-feedback" onclick="
+             addFeedback();
+             ">Submit</button>
+             </div>
+
+              <!--------------------------------------------------------------------------------------------------------------->
+
+              <div class="all-feedbacks">
+
+                <div class="feedback">
+                  <p>I love this place</p>
+                </div>
+
+                <div class="feedback">
+                  <p>They have the best products</p>
+                </div>
+
+              </div>
+
+
+            </div>
+          
+
+         </div>
+
+        
+         <!---------------------------------------------END OF FEEDBACKS------------------------------------------------------>
+        
+         <!----------------------------------------------------ABOUT------------------------------------------->
+        
+        
+         <div class="section" id="about-us">
+
+          <div class="content-container">
+
+          <div class="left-content">
+            
+          <div class="introduction">
+          <p>
+            We are a small family living in New York, Manhatan, running a small bakery accross the streets, this whole thing started as a small hobby we used to do for fun, which eventually grew up to become a small successfull bussiness.
+           <br>
+           We learned and perfect the art of baking, as a result, our bakery's menu has been expanded to hold many different items, we also takes special orders for birthday cakes, christmas holiday tree branch cakes and national pie days.
+           <br>
+           The proof of our success is that people would start to stack in lines early in the mourning to get their hands on our freshly baked products, we barely keep up with both the customers that comes to the bakery and the online orders, quite the attention for a tiny bakery such as ours wouldn't you say?
+           <br>
+           Thank you for visiting our page, be sure to stop by at our bakery whenever you can! we offers free samples! No we're not trying to lure to our bakery with free samples lol.
+           also make sure to follow us on all Social Media.
+           <br>
+           Have a Wonderful Day!
+          
+          </p>
+
+         
+
+          </div>
+
+          </div>
+
+          <!---------------------------------------------------------------------------->
+
+          <div class="right-content">
+          <img class="about-image" src="About/greenbakeryee.jpg" width="650" height="372" loading="lazy" >
+
+          <div class="Social-Media">
+            <button><img src="About/icons8-facebook-50.png" width="50" height="50"></button>
+            <button><img src="About/icons8-instagram-50.png" width="50" height="50"></button>
+            <button><img src="About/icons8-whatsapp-50.png" width="50" height="50"></button>
+            <button><img src="About/icons8-x-50.orange.png" width="50" height="50"></button>
+            </div>
+
+          </div>
+
+          
+
+         </div>
+ 
+         </div>
+
+
+         <script src="script.js">
+
+           
+        
+
+          
+         </script>
+
+
+        </main>
+
+        
+
+
+    
+</body>
+</html>

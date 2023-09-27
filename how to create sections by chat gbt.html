@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single-Page Application</title>
+    <style>
+        /* Style for the buttons */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        /* Style for the sections */
+        .section {
+            display: none; /*hide all sections as a default value*/
+            padding: 20px;
+            text-align: center;
+        }
+
+        #home-section {
+            background-color: #f0f0f0;
+        }
+
+        #shopping-section {
+            background-color: #d3d3d3;
+        }
+
+        #about-section {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button" onclick="showSection('home-section')">Home</button>
+        <button class="button" onclick="showSection('shopping-section')">Shopping</button>
+        <button class="button" onclick="showSection('about-section')">About</button>
+    </div>
+
+    <div class="section" id="home-section"> <!--Step 1: create a div with both class name and an id :-->
+        <h2>Welcome to the Home Page</h2>
+        <p>This is the home page content.</p>
+    </div>
+
+    <div class="section" id="shopping-section">
+        <h2>Welcome to the Shopping Page</h2>
+        <p>This is the shopping page content.</p>
+    </div>
+
+    <div class="section" id="about-section">
+        <h2>Welcome to the About Page</h2>
+        <p>This is the about page content.</p>
+    </div>
+
+    <script>
+        function showSection(sectionId) { // step 2: create a function that would display the section using both the class name and id
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => { 
+                section.style.display = 'none'; //loop through each section and assing display 'none' to all the sections,this will ensure that
+            }); // the previosly displayed section will be set back to 'none'
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId); //this code will take the section's name from the call out function code, and 
+            selectedSection.style.display = 'block'; //and reasign display 'block' to it so it can be displayed on the page
+        } 
+    </script>
+</body>
+</html>
